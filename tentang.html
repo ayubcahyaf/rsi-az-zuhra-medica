@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Kami - RSI AZ-ZUHRA MEDICA</title>
-    <meta name="description" content="RSI AZ-ZUHRA MEDICA - Melayani dengan Hati, Menyembuhkan dengan Ilmu.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
 /* ============================================================
@@ -670,23 +669,22 @@ img { max-width:100%; display:block; }
     .footer-links { justify-content:center; }
 }
 
+    .goals-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+    .goal-card { background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-sm); transition:box-shadow .3s; }
+    .goal-card:hover { box-shadow:var(--shadow-md); }
+    @media(max-width:768px){ .goals-grid { grid-template-columns:1fr; } }
     </style>
 </head>
 <body>
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
-    <div id="loading-screen">
-        <div class="loader-logo">RSI AZ-ZUHRA MEDICA</div>
-        <div class="loader-bar"></div>
-    </div>
+    <div id="loading-screen"><div class="loader-logo">RSI AZ-ZUHRA MEDICA</div><div class="loader-bar"></div></div>
     <div id="progress-bar"></div>
     <button id="back-to-top" aria-label="Kembali ke atas"><i class="fas fa-arrow-up"></i></button>
+
     <nav class="navbar">
         <div class="container">
-            <div class="logo">
-                <div class="logo-icon"><i class="fas fa-hospital"></i></div>
-                <span>RSI AZ-ZUHRA MEDICA</span>
-            </div>
+            <div class="logo"><div class="logo-icon"><i class="fas fa-hospital"></i></div><span>RSI AZ-ZUHRA MEDICA</span></div>
             <ul class="nav-menu">
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="tentang.html" class="active">Tentang</a></li>
@@ -698,6 +696,7 @@ img { max-width:100%; display:block; }
             <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
     </nav>
+
     <section class="page-header">
         <div class="container">
             <p class="section-eyebrow" style="color:rgba(255,255,255,0.5);margin-bottom:8px">RSI AZ-ZUHRA MEDICA</p>
@@ -705,35 +704,99 @@ img { max-width:100%; display:block; }
             <p>Mengenal lebih dekat RSI AZ-ZUHRA MEDICA</p>
         </div>
     </section>
+
     <section class="page-content">
         <div class="container">
+
+            <!-- VISI & MISI -->
             <div class="vision-mission" data-stagger>
                 <div class="vm-card">
                     <div class="vm-icon"><i class="fas fa-eye"></i></div>
                     <h3>Visi</h3>
-                    <p>Menjadi Rumah Sakit Islam terdepan yang memberikan pelayanan kesehatan berkualitas tinggi dengan mengintegrasikan nilai-nilai Islam, dan menjadi pilihan utama masyarakat dalam mendapatkan layanan kesehatan yang terpercaya.</p>
+                    <p style="font-style:italic;font-size:0.95rem;line-height:1.8">"Menjadi rumah sakit Islam yang unggul, profesional, dan memberikan pelayanan kesehatan berbasis nilai-nilai Islami serta adaptif terhadap perkembangan ilmu pengetahuan dan teknologi dengan berstandar internasional."</p>
                 </div>
                 <div class="vm-card">
                     <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
                     <h3>Misi</h3>
-                    <p>Memberikan pelayanan kesehatan yang berkualitas, profesional, dan islami dengan pendekatan holistik. Mengembangkan kompetensi sumber daya manusia dan mendukung pendidikan kesehatan serta penelitian medis yang berkelanjutan.</p>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px">
+                        <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.88rem;line-height:1.7"><span style="color:var(--emerald);font-weight:800;font-size:1.1rem;margin-top:-1px;flex-shrink:0">01</span><span>Memberikan pelayanan yang <strong>Ramah Amanah Profesional Islami (RAPI)</strong>.</span></li>
+                        <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.88rem;line-height:1.7"><span style="color:var(--emerald);font-weight:800;font-size:1.1rem;margin-top:-1px;flex-shrink:0">02</span><span>Mewujudkan pelayanan kesehatan bermutu tinggi yang mengintegrasikan standar medis internasional dengan IPTEK sesuai prinsip Islam.</span></li>
+                        <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.88rem;line-height:1.7"><span style="color:var(--emerald);font-weight:800;font-size:1.1rem;margin-top:-1px;flex-shrink:0">03</span><span>Membudayakan sikap empati, santun, dan kejujuran sebagai pondasi utama dalam melayani pasien.</span></li>
+                        <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.88rem;line-height:1.7"><span style="color:var(--emerald);font-weight:800;font-size:1.1rem;margin-top:-1px;flex-shrink:0">04</span><span>Menjadikan pasien sebagai prioritas utama dengan perawatan yang aman, nyaman, dan sesuai standar.</span></li>
+                        <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.88rem;line-height:1.7"><span style="color:var(--emerald);font-weight:800;font-size:1.1rem;margin-top:-1px;flex-shrink:0">05</span><span>Membangun pelatihan medis mutakhir untuk memastikan setiap staf memiliki keahlian yang relevan dengan perkembangan sains global.</span></li>
+                    </ul>
                 </div>
             </div>
 
+            <!-- FILOSOFI LOGO -->
             <section class="values">
-                <p class="section-eyebrow">Yang kami pegang</p>
-                <h2 class="section-title">Nilai-Nilai Kami</h2>
-                <p class="section-sub">Prinsip yang menjadi landasan setiap pelayanan kami</p>
+                <p class="section-eyebrow">Filosofi &amp; Identitas</p>
+                <h2 class="section-title">Filosofi Logo</h2>
+                <p class="section-sub">Setiap elemen logo RSI AZ-ZUHRA MEDICA mengandung makna yang mendalam</p>
                 <div class="values-grid" data-stagger>
-                    <div class="value-card"><h3><i class="fas fa-heart"></i> Qalbiyah (Keikhlasan)</h3><p>Melayani dengan sepenuh hati dan niat tulus untuk membantu sesama demi ridha Allah SWT.</p></div>
-                    <div class="value-card"><h3><i class="fas fa-book"></i> Amanah (Terpercaya)</h3><p>Menjaga kepercayaan pasien dengan profesionalisme dan integritas tinggi dalam setiap tindakan.</p></div>
-                    <div class="value-card"><h3><i class="fas fa-star"></i> Ihsan (Kebaikan)</h3><p>Memberikan layanan terbaik dengan standar tertinggi dalam setiap aspek pelayanan kesehatan.</p></div>
-                    <div class="value-card"><h3><i class="fas fa-handshake"></i> Musyawarah (Kerjasama)</h3><p>Membangun kerjasama yang harmonis antar tim untuk menghasilkan pelayanan yang optimal.</p></div>
-                    <div class="value-card"><h3><i class="fas fa-lightbulb"></i> Inovasi</h3><p>Terus berinovasi untuk memberikan solusi kesehatan yang terkini, efektif, dan terpercaya.</p></div>
-                    <div class="value-card"><h3><i class="fas fa-globe"></i> Integrasi</h3><p>Mengintegrasikan ilmu pengetahuan medis modern dengan nilai-nilai Islam secara harmonis.</p></div>
+                    <div class="value-card"><h3><i class="fas fa-plus-square"></i> Palang Medis Bergaris</h3><p>Bentuk palang medis dari garis outline tipis melambangkan <strong>keterbukaan, transparansi, dan standar kesehatan internasional</strong>. Desain minimalis menunjukkan RS yang adaptif dan berorientasi masa depan.</p></div>
+                    <div class="value-card"><h3><i class="fas fa-heartbeat"></i> Garis EKG / Detak Jantung</h3><p>Garis EKG terintegrasi melambangkan <strong>pelayanan yang dinamis dan responsif</strong>. Detak jantung yang stabil mencerminkan keamanan dan kenyamanan pasien sebagai prioritas utama.</p></div>
+                    <div class="value-card"><h3><i class="fas fa-leaf"></i> Elemen Daun Hijau</h3><p>Aksen daun hijau melambangkan <strong>kesembuhan alami, keramahan, dan empati</strong>. Warna hijau secara khusus mewakili nilai Islami dan aspek "Ramah" serta "Amanah" dalam budaya RAPI.</p></div>
+                    <div class="value-card"><h3><i class="fas fa-dna"></i> Struktur Helix DNA</h3><p>Detail menyerupai DNA mewakili <strong>integrasi IPTEK dan sains global</strong>, menegaskan misi membangun pelatihan medis mutakhir bagi seluruh staf rumah sakit.</p></div>
+                    <div class="value-card"><h3><i class="fas fa-circle" style="color:#1a3a6b"></i> Warna Biru Tua</h3><p>Melambangkan <strong>profesionalisme, kepercayaan, kejujuran, dan standar internasional</strong> yang menjadi fondasi RSI AZ-ZUHRA MEDICA.</p></div>
+                    <div class="value-card"><h3><i class="fas fa-circle" style="color:var(--emerald)"></i> Warna Hijau &amp; Tipografi</h3><p>Melambangkan <strong>kehidupan, harmoni Islam, dan ketenangan</strong>. Font sans-serif mempertegas kesan RS yang efisien, modern, dan mudah diakses masyarakat.</p></div>
                 </div>
             </section>
 
+            <!-- GOALS & OBJECTIVES -->
+            <section style="margin-bottom:80px">
+                <p class="section-eyebrow">Target &amp; Rencana</p>
+                <h2 class="section-title">Goals &amp; Objectives</h2>
+                <p class="section-sub">Komitmen nyata RSI AZ-ZUHRA MEDICA dalam mewujudkan pelayanan terbaik</p>
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+                            <div style="width:48px;height:48px;background:linear-gradient(135deg,var(--emerald),var(--forest));border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-heart" style="color:white;font-size:1.1rem"></i></div>
+                            <h3 style="font-size:1rem;margin:0;line-height:1.4">Kejujuran &amp; Empati sebagai Resep Utama</h3>
+                        </div>
+                        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Pelatihan komunikasi terapeutik bagi tenaga kesehatan dalam <strong>6 bulan</strong> pertama operasional.</span></li>
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Survei kepuasan pasien setiap 6 bulan dengan target kepuasan <strong>minimal 90%</strong>.</span></li>
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Evaluasi kinerja berbasis etika profesi dan nilai kejujuran setiap 6 bulan oleh manajemen.</span></li>
+                        </ul>
+                    </div>
+                    <div class="goal-card">
+                        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+                            <div style="width:48px;height:48px;background:linear-gradient(135deg,var(--emerald),var(--forest));border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-laptop-medical" style="color:white;font-size:1.1rem"></i></div>
+                            <h3 style="font-size:1rem;margin:0;line-height:1.4">Ekosistem Digital &amp; Inovasi Teknologi</h3>
+                        </div>
+                        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Implementasi <strong>Electronic Medical Record (EMR)</strong> di seluruh unit dalam 1 tahun operasional.</span></li>
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Sistem pendaftaran pasien <strong>digital &amp; online</strong> tersedia dalam 6 bulan pertama.</span></li>
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Pelatihan sistem informasi RS bagi seluruh staf dalam 3 bulan pasca implementasi.</span></li>
+                        </ul>
+                    </div>
+                    <div class="goal-card">
+                        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+                            <div style="width:48px;height:48px;background:linear-gradient(135deg,var(--emerald),var(--forest));border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-mosque" style="color:white;font-size:1.1rem"></i></div>
+                            <h3 style="font-size:1rem;margin:0;line-height:1.4">Lingkungan Perawatan Inklusif &amp; Islami</h3>
+                        </div>
+                        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Fasilitas ramah pasien: ruang tunggu nyaman, <strong>fasilitas ibadah</strong>, dan akses difabel dalam 1 tahun.</span></li>
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Pelatihan pelayanan berbasis nilai Islami dan budaya beragam dalam <strong>6 bulan</strong> pertama.</span></li>
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Evaluasi standar mutu dan keselamatan pasien <strong>setiap tahun</strong> sesuai akreditasi nasional &amp; internasional.</span></li>
+                        </ul>
+                    </div>
+                    <div class="goal-card">
+                        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+                            <div style="width:48px;height:48px;background:linear-gradient(135deg,var(--emerald),var(--forest));border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-chalkboard-teacher" style="color:white;font-size:1.1rem"></i></div>
+                            <h3 style="font-size:1rem;margin:0;line-height:1.4">Learning Center Internal</h3>
+                        </div>
+                        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Pembentukan <strong>Learning Center internal</strong> sebagai pusat pelatihan staf dalam 1 tahun operasional.</span></li>
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Minimal <strong>2 program pelatihan</strong> medis atau teknis setiap tahun bagi tenaga kesehatan.</span></li>
+                            <li style="display:flex;gap:10px;font-size:0.84rem;color:var(--ink-light);line-height:1.65"><i class="fas fa-check-circle" style="color:var(--emerald);margin-top:3px;flex-shrink:0"></i><span>Minimal <strong>80% tenaga kesehatan</strong> mengikuti program pengembangan kompetensi setiap tahun.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEJARAH -->
             <section class="history" data-anim>
                 <p class="section-eyebrow">Perjalanan kami</p>
                 <h2 class="section-title">Sejarah Kami</h2>
@@ -747,6 +810,7 @@ img { max-width:100%; display:block; }
                 </div>
             </section>
 
+            <!-- KEPEMIMPINAN -->
             <section class="leadership">
                 <p class="section-eyebrow">Tim kepemimpinan</p>
                 <h2 class="section-title">Kepemimpinan</h2>
@@ -757,6 +821,7 @@ img { max-width:100%; display:block; }
                     <div class="leader-card"><div class="leader-photo"><i class="fas fa-user-tie"></i></div><h3>Ir. Muhammad Rizki</h3><p>Direktur Operasional</p><small>Ahli manajemen rumah sakit bersertifikat internasional</small></div>
                 </div>
             </section>
+
         </div>
     </section>
 
@@ -767,40 +832,31 @@ img { max-width:100%; display:block; }
                     <h4>RSI AZ-ZUHRA MEDICA</h4>
                     <p>Melayani dengan Hati, Menyembuhkan dengan Ilmu. Rumah Sakit Islam terpercaya dengan standar internasional.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Layanan</h4>
-                    <ul>
-                        <li><a href="layanan.html">Konsultasi Medis</a></li>
-                        <li><a href="layanan.html">Rawat Inap</a></li>
-                        <li><a href="layanan.html">Laboratorium</a></li>
-                        <li><a href="layanan.html">Radiologi</a></li>
-                        <li><a href="layanan.html">Unit Gawat Darurat</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Hubungi Kami</h4>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> (021) 1234-5678</li>
-                        <li><i class="fas fa-phone"></i> (021) 1234-5679 (IGD)</li>
-                        <li><i class="fas fa-envelope"></i> info@rsazzuhramedica.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Jl. Kesehatan No. 123, Jakarta</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Jam Operasional</h4>
-                    <ul>
-                        <li><i class="fas fa-clock"></i> Poliklinik: 07:00&ndash;19:00</li>
-                        <li><i class="fas fa-clock"></i> IGD: 24 Jam</li>
-                        <li><i class="fas fa-clock"></i> Rawat Inap: 24 Jam</li>
-                        <li><i class="fas fa-mosque"></i> Musholla: 24 Jam</li>
-                    </ul>
-                </div>
+                <div class="footer-section"><h4>Layanan</h4><ul>
+                    <li><a href="layanan.html">Konsultasi Medis</a></li>
+                    <li><a href="layanan.html">Rawat Inap</a></li>
+                    <li><a href="layanan.html">Laboratorium</a></li>
+                    <li><a href="layanan.html">Radiologi</a></li>
+                    <li><a href="layanan.html">Unit Gawat Darurat</a></li>
+                </ul></div>
+                <div class="footer-section"><h4>Hubungi Kami</h4><ul>
+                    <li><i class="fas fa-phone"></i> (021) 1234-5678</li>
+                    <li><i class="fas fa-phone"></i> (021) 1234-5679 (IGD)</li>
+                    <li><i class="fas fa-envelope"></i> info@rsazzuhramedica.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Jl. Kesehatan No. 123, Jakarta</li>
+                </ul></div>
+                <div class="footer-section"><h4>Jam Operasional</h4><ul>
+                    <li><i class="fas fa-clock"></i> Poliklinik: 07:00&ndash;19:00</li>
+                    <li><i class="fas fa-clock"></i> IGD: 24 Jam</li>
+                    <li><i class="fas fa-clock"></i> Rawat Inap: 24 Jam</li>
+                    <li><i class="fas fa-mosque"></i> Musholla: 24 Jam</li>
+                </ul></div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 RSI AZ-ZUHRA MEDICA. Semua Hak Dilindungi.</p>
