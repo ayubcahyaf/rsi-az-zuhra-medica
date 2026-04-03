@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/tentang", "destination": "/tentang.html" },
+    { "source": "/layanan", "destination": "/layanan.html" },
+    { "source": "/dokter", "destination": "/dokter.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/kontak", "destination": "/kontak.html" },
+    { "source": "/dashboard", "destination": "/dashboard.html" }
+  ]
+}
